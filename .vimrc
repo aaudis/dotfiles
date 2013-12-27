@@ -1,4 +1,4 @@
-" VBundle
+" Vundle 
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -18,7 +18,7 @@ let mapleader = ","
 set laststatus=2
 set encoding=utf8
 
-" iekraasojam samekleeto rezultaatu
+" Highlight search result 
 set hlsearch
 set ruler
 
@@ -49,4 +49,4 @@ set noswapfile
 
 autocmd BufWrite *.go :Fmt
 
-set completeopt-=preview "nodisablejam pie autocomplita preview windowu
+set completeopt-=preview " disable preview/scratch window in autocomplete
