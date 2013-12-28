@@ -18,6 +18,7 @@ let mapleader = ","
 set laststatus=2
 set encoding=utf8
 set ic 				" case insensitive search
+set backspace=indent,eol,start
 
 " Highlight search result 
 set hlsearch
