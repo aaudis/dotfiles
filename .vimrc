@@ -52,3 +52,12 @@ set noswapfile
 autocmd BufWrite *.go :Fmt
 
 set completeopt-=preview " disable preview/scratch window in autocomplete
+
+" let g:kolor_italic=1                    " Enable italic. Default: 1
+" let g:kolor_bold=1                      " Enable bold. Default: 1
+" let g:kolor_underlined=0                " Enable underline for 'Underlined'. Default: 0
+" let g:kolor_alternative_matchparen=0    " Gray 'MatchParen' color. Default: 0
+
+let g:molokai_original = 1
+" let g:rehash256 = 1
+" set background=dark
