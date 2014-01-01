@@ -1,4 +1,6 @@
-" Vundle 
+set nocompatible
+
+" Vundle
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -13,8 +15,10 @@ filetype plugin indent on
 syntax on
 nnoremap ; :
 
-set nu
-let mapleader = ","
+set cursorline
+set number
+set relativenumber
+let mapleader=","
 set laststatus=2
 set encoding=utf8
 set ic 				" case insensitive search
@@ -27,8 +31,8 @@ set ruler
 " Command-T stuff 
 noremap <leader>f :CommandT<cr>
 let g:CommandTCancelMap='<c-x>'
-let g:CommandTAcceptSelectionMap = '<c-t>'
-let g:CommandTAcceptSelectionTabMap = '<cr>'
+let g:CommandTAcceptSelectionMap='<c-t>'
+let g:CommandTAcceptSelectionTabMap='<cr>'
 
 " Tab moving
 map <leader>tw :tabnew<cr>
@@ -43,6 +47,8 @@ map <C-n><C-m> :NERDTreeToggle<cr>
 " Saving file
 map <C-b> :update<cr>
 imap <C-b> <Esc>:update<cr> i
+imap <leader>w <esc>:w<cr>a
+map <leader>w :w<cr>
 
 " Turn backup off, since most stuff is in SVN, git et.c anyway...
 set nobackup
@@ -53,11 +59,5 @@ autocmd BufWrite *.go :Fmt
 
 set completeopt-=preview " disable preview/scratch window in autocomplete
 
-" let g:kolor_italic=1                    " Enable italic. Default: 1
-" let g:kolor_bold=1                      " Enable bold. Default: 1
-" let g:kolor_underlined=0                " Enable underline for 'Underlined'. Default: 0
-" let g:kolor_alternative_matchparen=0    " Gray 'MatchParen' color. Default: 0
-
 let g:molokai_original = 1
-" let g:rehash256 = 1
-" set background=dark
+colorscheme molokai
